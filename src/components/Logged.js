@@ -16,7 +16,7 @@ const Logged = () => {
 
   const logout = useMutation(logoutAuth, {
     onSuccess: () => {
-      navigate("/");
+      navigate("/longplayweb");
       navigate(0);
     },
   });

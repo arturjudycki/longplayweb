@@ -23,7 +23,7 @@ const Login = () => {
 
   const { isError, mutate } = useMutation(loginAuth, {
     onSuccess: () => {
-      navigate("/");
+      navigate("/longplayweb");
       navigate(0);
     },
   });

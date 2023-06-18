@@ -9,7 +9,11 @@ const Footer = () => {
         <p className="footer__container-text">
           &copy; {new Date().getFullYear()}
         </p>
-        <NavLink to="/" exact="true" className="footer__container-logo">
+        <NavLink
+          to="/longplayweb"
+          exact="true"
+          className="footer__container-logo"
+        >
           <img src={img} alt="logo" />
         </NavLink>
       </div>

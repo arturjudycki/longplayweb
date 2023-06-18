@@ -349,12 +349,12 @@ const ManagingArtists = () => {
   };
 
   if (isLogged === "error") {
-    navigate("/");
+    navigate("/longplayweb");
   }
 
   if (isLogged === "success") {
     if (data.user.user_type !== "admin") {
-      navigate("/");
+      navigate("/longplayweb");
     } else {
       return (
         <>

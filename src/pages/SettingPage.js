@@ -79,7 +79,7 @@ const SettingPage = () => {
   }
 
   if (status === "error") {
-    navigate("/");
+    navigate("/longplayweb");
   }
 
   if (status === "success") {

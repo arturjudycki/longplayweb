@@ -29,7 +29,7 @@ const Page = () => {
   return (
     <div className="wrapper">
       <Routes>
-        <Route path="/" exact element={<HomePage />} />
+        <Route path="/longplayweb" exact element={<HomePage />} />
         <Route path="/login" exact element={<Login />} />
         <Route path="/register" exact element={<Register />} />
         <Route

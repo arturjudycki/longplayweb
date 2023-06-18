@@ -174,7 +174,7 @@ const Navigation = () => {
       <div className="header__wrapper">
         <div className="header__container">
           <div className="header__box">
-            <NavLink to="/" exact="true" className="header__logo">
+            <NavLink to="/longplayweb" exact="true" className="header__logo">
               <img src={img} alt="logo" />
             </NavLink>
             <form className="header__form" onSubmit={handleSubmitSearch}>

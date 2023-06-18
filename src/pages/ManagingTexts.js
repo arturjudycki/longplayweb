@@ -192,7 +192,7 @@ const ManagingTexts = () => {
   }
 
   if (isLogged === "error") {
-    navigate("/");
+    navigate("/longplayweb");
   }
 
   const displayCorrectImage = (type) => {
