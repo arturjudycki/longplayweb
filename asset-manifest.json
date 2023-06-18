@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/longplayweb/static/css/main.1b9a931b.css",
-    "main.js": "/longplayweb/static/js/main.23cc0895.js",
+    "main.js": "/longplayweb/static/js/main.7afff457.js",
     "static/media/news.png": "/longplayweb/static/media/news.caafca8dc6780305749f.png",
     "static/media/interview.jpg": "/longplayweb/static/media/interview.b5bf8ebfab8877c5aa4c.jpg",
     "static/media/article.jpg": "/longplayweb/static/media/article.f18d3e9a4d8c045dc210.jpg",
     "index.html": "/longplayweb/index.html",
     "main.1b9a931b.css.map": "/longplayweb/static/css/main.1b9a931b.css.map",
-    "main.23cc0895.js.map": "/longplayweb/static/js/main.23cc0895.js.map"
+    "main.7afff457.js.map": "/longplayweb/static/js/main.7afff457.js.map"
   },
   "entrypoints": [
     "static/css/main.1b9a931b.css",
-    "static/js/main.23cc0895.js"
+    "static/js/main.7afff457.js"
   ]
 }
