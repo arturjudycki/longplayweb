@@ -1,0 +1,109 @@
+@use '../variables.sass' as *
+
+.comment-title
+    font-size: 2rem
+    text-transform: uppercase
+    padding: 30px 0
+
+.comments
+    &__addContainer
+        position: relative
+        width: 70%
+    &__form
+        padding-bottom: 30px
+        &-input
+            font-family: $font
+            resize: none
+            width: 100%
+            font-size: 1.8rem
+            border: 3px solid #1c2e53
+            padding: 15px 125px 15px 20px
+            border-radius: 10px
+            height: 80px
+            &-edit
+                margin-top: 5px
+                font-size: 1.6rem
+                font-weight: 300
+                background-color: #f8f8f8
+                padding: 10px 5px
+                border: none
+                word-break: break-all
+                resize: none
+                width: 700px
+                height: 80px
+                display: block
+    &__editBox
+    &__box
+        margin: 30px 0
+        width: 70%
+        &-item-user
+            font-size: 2rem
+            font-weight: 400
+            display: flex
+            &-link
+                text-decoration: none
+                color: #000
+                display: flex
+                justify-content: flex-start
+                align-items: center
+                &:hover
+                    color: #636363
+        &-item-icon
+            font-size: 3rem
+            color: #0062af
+            padding-right: 10px
+        &-item-content
+            margin-top: 5px
+            margin-left: 40px
+            font-size: 1.6rem
+            font-weight: 300
+            background-color: #f8f8f8
+            padding: 10px 5px
+            word-break: break-all
+        &-item-edited
+            font-size: 1.4rem
+            color: #5e5d5d
+            margin-left: 40px
+            margin-top: 5px
+        &-item-date
+            display: flex
+            justify-content: flex-end
+            margin: 5px 0
+            font-size: 1.2rem
+            color: #5e5d5d
+            &>span
+                margin-left: 5px
+                font-style: italic
+        &-edit-delete
+            margin-left: auto
+        &-edit,
+        &-delete
+            border-radius: 10px
+            padding: 5px 10px
+            margin-left: 5px
+            color: #242527
+            font-size: 1.5rem
+            cursor: pointer
+            transition: .3s
+            &:hover
+                background-color: #242527
+                color: #fff
+        &-icon-edit,
+        &-icon-delete
+            padding-right: 5px
+            
+
+.button-addComment
+    position: absolute
+    bottom: 15%
+    right: 3.5%
+    text-transform: uppercase
+    background-color: #1c2e53
+    color: #fff
+    border: none
+    border-radius: 30px
+    padding: 10px 15px
+    cursor: pointer
+    &:hover
+        background-color: #051536
+

@@ -1,0 +1,234 @@
+@use '../variables.sass' as *
+
+.album-page
+    margin-top: 20px
+    &__box
+        display: flex
+    &__cover
+        border-radius: 10px
+        box-shadow: 0 0 3px 0 #000
+        width: 250px
+        height: 250px
+        &--smaller
+            width: 50px
+            height: 50px
+            border-radius: 5px
+            box-shadow: 0 0 1px 0 #000
+            margin-right: 10px
+    &__box-info
+        margin: 0 0 0 50px
+    &__type-album
+        color: #0062af
+        text-transform: uppercase
+        font-weight: 600
+        font-size: 1.5rem
+    &__title
+        font-size: 3rem
+        text-transform: uppercase
+        font-weight: 700
+        margin: 10px 0
+    &__release-date
+        font-size: 1.3rem
+        color: #5e5d5d
+    &__artist
+        margin-top: 10px
+        &-item
+            font-size: 1.8rem
+            color: #000
+            &:hover
+                color: #0062af
+    &__box-details
+        width: 300px
+        border-radius: 10px
+        box-shadow: 0 0 2px 0 #000
+        margin-right: 50px
+        margin-bottom: auto
+        &-item
+            padding: 10px
+            border-bottom: 1px solid #afafaf
+            font-size: 1.5rem
+            &:last-of-type
+                border-bottom: none
+            &-text
+                font-weight: 700
+                margin-bottom: 4px
+    &__line
+        margin: 30px 0
+
+.tracklist
+    border-radius: 5px
+    padding: 20px
+    box-shadow: 0 0 2px 0 #000
+    flex-grow: 1
+    &__title
+        font-size: 1.9rem
+        text-transform: uppercase
+        letter-spacing: 2px
+        padding-bottom: 20px
+    &__container
+        background-color: #fafbfb
+        border-radius: 10px
+        box-shadow: 0 0 2px 0 #000
+        padding: 10px
+
+    &__song-box
+        display: flex
+        align-items: center
+        padding: 5px 0
+        &:hover
+            background-color: #e8e6e6
+            border-radius: 10px
+    &__song-item
+        font-size: 1.7rem
+        &--track-number
+            text-align: center
+            width: 10%
+            color: #666
+        &--title
+            width: 40%
+        &--duration
+            font-size: 1.4rem
+            color: #666
+        &--rate
+            text-transform: uppercase
+            margin-left: auto
+            font-weight: 500
+            color: #000
+            text-decoration: none
+        &--no-rate
+            &:hover
+                color: #888
+    &__star
+        color: #ffc200
+    &__link
+        color: #333
+        text-decoration: none
+        padding-right: auto
+        letter-spacing: 1px
+        &:hover
+            color: #0062af
+
+.star
+    color: #ffc200
+
+.rate
+    border-radius: 5px
+    box-shadow: 1px 1px 6px 0px #000
+    width: 420px
+    min-width: 420px
+    margin-left: auto
+    &__box
+        padding: 50px
+        &-button
+            display: flex
+            font-size: 1.5rem
+            margin-top: 10px
+            margin-left: auto
+            text-align: left
+            background-color: #0062af
+            border: 1px solid #0062af
+            border-radius: 5px
+            color: #fff
+            text-transform: uppercase
+            padding: 6px 20px
+            cursor: pointer
+            transition: .3s
+            &:hover
+                border: 1px solid #004d88
+                background-color: #004d88
+            &--edit
+                margin-right: 50px
+                margin-bottom: 5px
+            &--position
+                background-color: #ff4154
+                border: 1px solid #ff4154
+                position: absolute
+                bottom: 20px
+                left: 80px
+                &:hover
+                    background-color: #fb1128
+                    border: 1px solid #fb1128
+    &__container
+        display: flex
+        align-items: center
+        font-size: 1.8rem
+        padding-bottom: 10px
+        &-text
+            text-transform: uppercase
+            letter-spacing: 1px
+            font-weight: 500
+        &-value
+            margin-left: 10px
+
+.star-input
+    display: none
+
+.heart-icon
+    font-size: 32px !important
+    margin-left: auto
+    cursor: pointer
+    &--noCursor
+        cursor: auto
+
+.heart-label
+    margin-left: auto
+
+.star-icon
+    font-size: 32px !important
+    cursor: pointer
+    &--noCursor
+        cursor: auto
+
+// .rate-song
+//     text-transform: uppercase
+//     margin-left: auto
+//     padding-right: 20px
+//     font-size: 1.4rem
+
+// .star-icon-listing
+//     font-size: 24px !important
+//     color: #ffc200
+    // cursor: pointer
+
+.form
+    &__opinion
+        width: 100%
+        margin-top: 20px
+        &-item
+            width: 100%
+            font-size: 1.5rem
+            background-color: #f8f8f8
+            border: 1px solid #c0bfbf
+            border-radius: 8px
+            padding: 10px
+            // word-break: break-all
+            resize: none
+            font-family: $font
+            height: auto
+            &--height
+                height: 150px
+
+.rate__change
+    font-size: 1.2rem
+    margin-bottom: 15px
+    color: #666
+
+.rate__edit-del
+    display: flex
+    align-items: flex-start
+    flex-direction: column
+    color: #aaa
+    font-size: 3rem
+    margin-top: 40px
+    &>div
+        display: flex
+        margin-right: auto
+        padding: 8px
+        border-radius: 10px
+        transition: .3s
+        &:hover
+            background-color: #aaa
+            color: #fff
+            cursor: pointer
+        &>*
+            margin-right: 5px

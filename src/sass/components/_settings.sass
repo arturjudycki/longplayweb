@@ -1,0 +1,90 @@
+@use '../variables.sass' as *
+
+.settings
+    &__title
+        font-size: 3rem
+        text-transform: uppercase
+        margin: 20px 0
+    &__changeData
+        margin: 20px 0
+        &-title
+            font-size: 2rem
+    &__box
+        display: flex
+        flex-wrap: wrap
+        margin: 20px 0
+        font-size: 1.6rem
+    &__text
+        &--bold
+            font-weight: 600
+            margin-right: 20px
+    &__faPen
+        cursor: pointer
+        margin: 0 10px
+        &:hover
+            color: #444
+
+.boxToChange
+    position: relative
+    width: 100%
+    margin: 15px 0
+    background-color: #f8f8f8
+    padding: 10px
+    &--email,
+    &--password,
+    &--text
+        display: none
+    &--none
+        display: block
+
+.sign-change
+    &__input
+        border: 1px solid #e2dcdc
+        border-radius: 5px
+        margin-top: 10px
+        padding: 10px 10px
+        width: 300px
+        // &-text
+        //     width: 500px
+        // &-text-area
+        //     width: 900px
+        //     max-width: 900px
+        //     height: 150px
+        //     font-size: 1.4rem
+        //     font-family: $font
+
+    &__button
+        margin-top: 20px
+        padding: 10px 0
+        font-size: 1.6rem
+        width: 100px
+        color: #fff
+        background-color: #1c2e53
+        border: 1px solid #1c2e53
+        cursor: pointer
+        transition: .3s
+        &:hover
+            background-color: transparent
+            color: #1c2e53
+        &--cancel
+            margin-right: 10px
+            background-color: transparent
+            color: #1c2e53
+            &:hover
+                background-color: #1c2e53
+                color: #fff
+
+.successEmail,
+.successPassword,
+.errorEmail,
+.errorPassword
+    width: 100%
+    height: 100%
+    background-color: #f8f8f8
+    position: absolute
+    top: 0
+    left: 0
+    display: flex
+    justify-content: center
+    align-items: center
+    font-size: 2rem

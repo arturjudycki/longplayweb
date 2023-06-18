@@ -1,0 +1,174 @@
+@use '../variables.sass' as *
+
+.managing-music
+    display: flex
+    justify-content: space-evenly
+    &__title
+        font-size: 2.8rem
+        margin: 20px 0
+        color: #1c2e53
+
+.line--margin-top
+    margin-top: 25px
+
+.line--margin-bottom
+    margin-bottom: 30px
+
+.preview-image__box
+    display: flex
+    justify-content: center
+    align-items: center
+    margin: 10px 0
+    width: 280px
+    height: 280px
+    border: 2px solid #000
+    border-radius: 25px
+    background-color: #fdf5f5
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25)
+
+.previewImg
+    width: 250px
+    height: 250px
+
+.adding-music
+    font-size: 1.6rem
+    box-shadow: 0 0 2px 0 #000
+    border-radius: 5px
+    padding: 20px
+    &--marginTop
+        margin-top: 40px
+    &__form
+        position: relative
+        width: 75%
+        &--editArtist
+            width: 700px
+        &-input
+            font-size: 1.5rem
+            padding: 10px
+            margin: 5px 0
+            width: 100%
+            border: 2px solid #000
+            color: #000
+            &--editArtist
+                margin-bottom: 10px
+            &::placeholder
+                color: #000
+                font-weight: 600
+                opacity: 1
+            &:-ms-input-placeholder
+                color: #000
+            &::-ms-input-placeholder
+                color: #000
+            &-textarea
+                resize: none
+                font-size: 1.6rem
+                font-family: $font
+            &-date
+                width: 30%
+                margin-left: 20px
+
+
+
+.file-cover
+    text-align: center
+    margin-left: 30px
+
+.add-cover
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin: 10px 0
+.add-date
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    &--flexBetween
+        justify-content: space-around
+    &>span
+        margin-left: 10px
+        font-weight: 700
+
+.add-button
+    display: flex
+    font-size: 1.4rem
+    padding: 10px 20px
+    margin-top: 20px
+    margin-left: auto
+    color: #1c2e53
+    background-color: transparent
+    border: 1px solid #1c2e53
+    border-radius: 4px
+    cursor: pointer
+    transition: .2s
+    &:hover
+        color: #fff
+        background-color: #1c2e53
+    &--end
+        position: absolute
+        width: 140px
+        top: 85%
+        left: 100%
+    &--center
+        margin: 20px auto
+        color: #fff
+        background-color: #1c2e53
+        &:hover
+            background-color: #040f25
+
+.info-add
+    text-align: center
+    margin: 10px auto 0
+    width: 50%
+    padding: 30px 20px
+    font-size: 1.8rem
+    border: 2px solid #000
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25)
+
+.link-to-artist--display
+    display: flex
+    align-items: center
+
+.infoAlbum
+    font-size: 1.8rem
+    text-align: center
+    padding: 10px
+
+.assign-link
+    display: flex
+    align-items: center
+    font-size: 1.5rem
+    margin-left: 15px
+    cursor: pointer
+    transition: .2s
+    &__text
+        text-align: center
+        width: 90px
+    &:hover
+        color: #a4a4a4
+
+.faFileAudio
+    font-size: 2rem
+
+.edit-album__choose
+    &-box
+        display: flex
+        justify-content: space-around
+        padding-top: 20px
+        font-size: 2.4rem
+    &-item
+        margin: 0 10px
+        padding-bottom: 5px
+        cursor: pointer
+        &-active
+            border-bottom: 5px solid #1c2e53
+
+.edit-cover
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &__current
+        text-align: center
+        margin-bottom: 5px
+
+.space-beetween-type-of-album
+    margin: 5px 0

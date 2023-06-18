@@ -1,0 +1,128 @@
+.song
+    &__box-item-r
+        display: flex
+        justify-content: center
+        align-items: center
+        &-title
+            background-color: #b6acac
+            border-radius: 10px
+    &__item-c
+        display: flex
+        justify-content: center
+        text-align: center
+        width: 20%
+        padding: 5px 10px
+        margin: 5px 0
+        border-right: 1px solid #252424
+        &:last-of-type
+            border-right: none
+        &--narrower
+            width: 10%
+    &__choose-author
+        margin: 30px 0 5px 0
+        &>span
+            padding: 15px 0
+            font-weight: 700
+    &__form-item
+        border: 1px solid #000
+        padding: 10px
+        font-size: 1.4rem
+        width: 250px
+        border-radius: 5px
+    &__search-artist
+        display: flex
+        border: 2px solid #000
+        padding: 5px
+        margin: 10px 0
+        width: 350px
+        &-item
+            color: #000
+            display: flex
+            align-items: center
+            cursor: pointer
+            &:hover
+                color: #777
+            &--artist
+                color: #1c2e53
+            &--paddingLeft
+                padding-left: 20px
+
+.button-song
+    margin: 5px auto
+    text-transform: uppercase
+    background-color: transparent
+    border: 2px solid #1c2e53
+    border-radius: 5px
+    color: #1c2e53
+    padding: 5px 10px
+    transition: .2s
+    cursor: pointer
+    &:hover
+        background-color: #1c2e53
+        color: #fff
+
+.songs__none
+    margin: 10px
+
+.song__form>label>p
+    text-align: left
+    margin: 5px 50px
+
+.song__author
+    display: block
+    padding-bottom: 10px
+
+.song-page
+    display: flex
+    margin-top: 10px
+    &__cover-statistics
+        width: 250px
+        height: 250px
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__cover
+        border-radius: 10px
+        width: 150px
+        height: 150px
+        
+        box-shadow: 0 0 2px 0 #000
+    &__box
+        display: flex
+        flex-direction: column
+        font-size: 1.8rem
+        padding: 10px 40px
+    &__container
+        display: flex
+    &__item-title
+        font-size: 3rem
+        font-weight: 700
+    &__item-artist
+        font-size: 2rem
+    &__item-album
+        font-size: 2rem
+        font-weight: 600
+        color: #1c2e53
+        margin: 40px 0 10px 0
+    &__link
+        text-decoration: none
+        color: #000
+        margin-right: auto
+    &__box-info
+        border-radius: 5px
+        box-shadow: 0 0 4px 0 #000
+        margin-top: 20px
+        font-size: 1.5rem
+        &-item
+            border-bottom: 1px solid #888
+            &>p
+                padding: 5px 5px 2px 5px
+            &:last-of-type
+                border-bottom: none
+            &-title
+                font-weight: 600
+
+.song-page__rate
+    border-radius: 5px
+    box-shadow: 0 0 2px 0 #000
+    padding: 50px

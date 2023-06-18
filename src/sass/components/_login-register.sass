@@ -1,0 +1,185 @@
+.sign-wrapper
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    width: 50%
+    margin: 40px auto
+    border: 1px solid #aaa
+    border-radius: 20px
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25)
+    padding: 30px
+    &--wider
+        width: 80%
+
+.sign-choose
+    display: flex
+    text-decoration: none
+    list-style: none
+    &__type
+        text-decoration: none
+        padding: 20px 40px
+        color: #000
+        font-size: 2.2rem
+
+.login_selected,
+.register_selected
+    border-bottom: 2px solid #1c2e53
+
+.sign-form
+    margin: 20px
+    display: flex
+    flex-direction: column
+    align-items: center
+    &__input
+        margin: 20px 0 0
+        padding: 10px 0 10px 5px
+        width: 400px
+        border: 1px solid #000
+        border-radius: 4px
+    &__remindPassword
+        text-decoration: none
+        margin-top: 20px
+        color: #1c2e53
+        font-size: 1.4rem
+        font-weight: 500
+    &__remindPassword:hover
+        color: #030b1c
+    &__button
+        align-self: stretch
+        font-size: 1.8rem
+        font-weight: 500
+        color: #1c2e53
+        margin-top: 40px
+        padding: 10px 0
+        background-color: #fff
+        border: 1px solid #1c2e53
+        border-radius: 5px
+        cursor: pointer
+    &__button:hover
+        color: #fff
+        background-color: #1c2e53
+        transition: 0.4s
+
+.password-info
+    font-size: 1.2rem
+    color: #1c2e53
+    margin-top: 15px
+    &__text
+        font-weight: 600
+    &__list
+       margin: 5px 0 0 20px
+       color: #1c2e53
+
+.sign-change-password
+    font-size: 2rem
+    font-weight: 600
+    color: #1c2e53
+
+.loginError,
+.registerError
+    margin: 20px 0 -20px
+    font-size: 1.4rem
+    color: #9b0606
+    font-weight: 600
+
+.errors
+    margin: 5px 0 0
+    font-size: 1.3rem
+    color: #9b0606
+    font-weight: 500
+
+.popUp
+    display: block
+    position: absolute
+    width: 510px
+    height: 600px
+    background-color: #fff
+    &__register201
+        z-index: 1000
+        position: absolute
+        top: 30%
+        left: 50%
+        transform: translate(-50%, -60%)
+        height: 200px
+        width: 500px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        background-color: #fff
+        border-radius: 20px
+        box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.25)
+        font-size: 1.8rem
+        &>p
+            padding: 5px 0
+    &__button
+        font-size: 1.8rem
+        font-weight: 500
+        color: #1c2e53
+        padding: 10px 20px
+        margin-top: 20px
+        background-color: #fff
+        border: 1px solid #1c2e53
+        border-radius: 5px
+        cursor: pointer
+        transition: .2s
+    &__button:hover
+        background-color: #1c2e53
+        color: #fff
+    &--wider
+        width: 700px
+.popUpEmail
+    display: block
+    position: absolute
+    width: 900px
+    height: 300px
+    background-color: #fff
+    &__200
+        z-index: 1000
+        position: absolute
+        top: 35%
+        left: 50%
+        transform: translate(-50%, -50%)
+        height: 150px
+        width: 500px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        background-color: #fff
+        box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.25)
+        border-radius: 30px
+        font-size: 1.8rem
+    &__200>p
+        padding: 10px 0
+.popUpPassword
+    display: block
+    position: absolute
+    width: 1000px
+    height: 450px
+    background-color: #fff
+    &__200
+        z-index: 1000
+        position: absolute
+        top: 30%
+        left: 50%
+        transform: translate(-50%, -50%)
+        height: 150px
+        width: 500px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        background-color: #fff
+        box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.25)
+        border-radius: 30px
+        font-size: 1.8rem
+
+.userLogged
+    &__box
+        text-align: center
+        margin-top: 100px
+    &__text
+        font-size: 3rem
+        color: #747272

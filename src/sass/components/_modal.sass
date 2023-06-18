@@ -1,0 +1,126 @@
+.modal, .overlay 
+    width: 100vw
+    height: 100vh
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    position: fixed
+    &--zIndex
+        z-index: 5
+
+.overlay 
+    background: rgba(49,49,49,0.8)
+
+.modal-content 
+    position: absolute
+    top: 40%
+    left: 50%
+    transform: translate(-50%, -50%)
+    background: #f1f1f1
+    padding: 14px 28px
+    border-radius: 3px
+    max-width: 800px
+    min-height: 150px
+    &--editArtist
+        top: 420px
+    &--editAlbum
+        max-width: 900px
+        width: 900px
+        margin-top: 50px
+    &--assign
+        width: 500px
+    &--songs
+        overflow-y: scroll
+        top: 50%
+        max-width: 1024px
+        width: 1024px
+        height: 700px
+    &--deleteSong
+        top: 25%
+        left: 25%
+        transform: translate(-25%, -25%)
+        display: flex
+        flex-direction: column
+        justify-content: center
+    &--editSong
+        top: 25%
+        left: 25%
+        transform: translate(-25%, -25%)
+
+.modal-title
+    font-size: 2rem
+
+.button-modal 
+    position: absolute
+    text-transform: uppercase
+    background-color: transparent
+    border: 2px solid #1c2e53
+    border-radius: 5px
+    color: #1c2e53
+    bottom: 10px
+    right: 10px
+    padding: 5px 10px
+    transition: .2s
+    cursor: pointer
+    &:hover
+        background-color: #1c2e53
+        color: #fff
+    &--confirm
+        bottom: 70px
+        right: 50%
+        transform: translateX(50%)
+        background-color: #1c2e53
+        color: #fff
+        &:hover
+            background-color: #051536
+    &--marginRight
+        margin-right: 100px
+        background-color: #1c2e53
+        color: #fff
+        &:hover
+            background-color: #051536
+    &--margin
+        margin-right: 15px
+
+.comment-del
+    position: absolute
+    top: 80px
+    left: 0
+    font-size: 1.6rem
+    font-weight: 600
+    width: 100%
+    text-align: center
+    padding: 10px 0
+    &--success
+        color: #128018
+    &--error
+        color: #b22e2e
+
+.info-log-modal
+    text-align: center
+    padding: 30px 100px
+    &__title
+        text-transform: uppercase
+        font-weight: 700
+        font-size: 2.5rem
+        margin-bottom: 40px
+    &__link
+        display: block
+        font-size: 1.8rem
+        text-decoration: none
+        margin: 10px auto
+        padding: 10px 
+        width: 300px
+        color: #1c2e53
+        border: 1px solid #1c2e53
+        transition: .2s
+        &:hover
+            background-color: #1c2e53
+            color: #fff
+
+    &__close
+        font-size: 1.8rem
+        cursor: pointer
+        color: #0062af
+        margin-top: 50px

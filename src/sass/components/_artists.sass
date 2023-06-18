@@ -1,0 +1,251 @@
+.section-artist-choose
+    display: flex
+    justify-content: space-evenly
+    font-size: 2rem
+    &__item
+        display: flex
+        align-items: center
+        width: 50%
+        cursor: pointer
+        margin-right: 20px
+        padding: 10px 5px 10px 10px
+        &:hover
+            color: #636363
+        &-active
+            border: 3px solid #1c2e53
+            border-bottom: none
+            border-top-left-radius: 20px
+
+.icon-artists
+    padding-left: 10px
+
+.search-artist
+    margin-top: 40px
+    &--margin
+        margin-top: 10px
+    &__box
+        position: relative
+        &>.icon-artists
+            position: absolute
+            font-size: 1.4rem
+            top: 13px
+            left: 5px
+            &--search-song
+                left: 25px
+    &__input
+        padding: 10px 10px 10px 40px
+        width: 50%
+        border: 2px solid #000
+        border-radius: 25px
+        &--width
+            width: 80%
+        &--w
+            width: 300px
+
+.info-add-artist
+    width: 500px
+    text-align: center
+    margin-top: 40px
+    font-size: 1.8rem
+
+.searched-artist
+    margin-top: 20px
+    &__box
+        display: flex
+        font-size: 1.8rem
+        padding: 10px
+        border: 2px solid #555
+        border-radius: 10px
+        width: 50%
+        margin: 5px 0
+        &--spaceBetween
+            justify-content: flex-start
+        &--width
+            width: 80%
+            align-items: center
+    &__name
+        color: #000
+        &:hover
+            color: #0062af
+    &__edit
+        display: flex
+        margin-left: 15px
+        font-style: italic
+        font-size: 1.5rem
+        margin-top: 3px
+        cursor: pointer
+        transition: .2s
+        &--top
+            margin-top: 15px
+        &--alignCenter
+            align-items: center
+            text-align: center
+        &:hover
+            color: #a4a4a4
+        &-text
+            margin-right: 5px
+
+.link-to-artist
+    text-decoration: none
+    width: 250px
+
+.edit-artist-info
+    font-size: 1.6rem
+    font-weight: 600
+    width: 100%
+    text-align: center
+    padding: 2px 0
+    &--success
+        color: #128018
+    &--error
+        color: #b22e2e
+
+.artist-page
+    &__box
+        margin-top: 25px
+    &__container
+        display: flex
+        margin-top: 20px
+        &-info
+            margin: 0 20px
+            &--width
+                max-width: 50%
+    &__item-name
+        text-align: center
+        font-size: 4rem
+        font-weight: 600
+        text-transform: uppercase
+        color: #1c2e53
+    &__item-title
+        font-size: 1.9rem
+        margin: 10px 0
+        color: #0062af
+        font-weight: 500
+        text-transform: uppercase
+    &__item-text
+        min-width: 300px
+        white-space: pre-wrap
+        font-size: 1.8rem
+        padding: 20px
+        border-radius: 5px
+        box-shadow: 0 0 5px 0 #1c2e53
+
+.discography
+    margin: 50px 0 0 15px
+    &__title
+        font-size: 2.4rem
+        font-weight: 600
+        margin-bottom: 25px
+    &__box
+        display: flex
+        margin: 10px 0
+    &__year
+        display: flex
+        align-items: center
+        font-size: 2rem
+        margin: 0 10px
+        width: 50px
+    &__box-img
+        box-shadow: 0 0 1px 0 #000
+        overflow: hidden
+        position: relative
+    &__cover
+        display: block
+        width: 150px
+        height: 150px
+        transition: .4s
+        &:hover
+            transform: scale(1.05)
+    &__info-box
+        display: flex
+        flex-direction: column
+        margin: 5px 20px
+    &__type-album
+        font-size: 1.2rem
+        text-transform: uppercase
+        font-weight: 600
+        color: #0062af
+    &__link
+        text-decoration: none
+        &-title
+            margin-right: auto
+    &__name-album
+        font-size: 2rem
+        margin: 10px 0
+        color: #000
+        &:hover
+            color: #444
+    &__line
+        width: 50%
+        height: 1px
+        background-color: #bebdbd
+
+.rated-value
+    position: absolute
+    right: 10px
+    top: 10px
+    &--topRight
+        right: 5px
+        top: 5px
+    &__content
+        width: 30px
+        height: 30px
+        border-radius: 50%
+        border: 2px solid #ffc200
+        background-color: #000
+        color: #ffc200
+        text-align: center
+        line-height: 28px
+        font-size: 1.6rem
+
+.list-artists
+    &__choose-letter
+        text-align: center
+        margin: 20px 0
+        &>span
+            cursor: pointer
+            margin-right: 15px
+            text-transform: uppercase
+            font-size: 1.6rem
+            &:hover
+                color: #222
+    &__title
+        text-align: center
+        margin: 20px 0
+        font-size: 2rem
+        font-weight: 600
+        text-transform: uppercase
+    &__box
+        margin: 40px 0
+    &__name
+        text-align: center
+        text-transform: uppercase
+        font-size: 1.8rem
+        letter-spacing: 3px
+        color: #000
+        margin: 4px 0
+        transition: .3s
+        &:hover
+            color: #444
+            margin-left: 20px
+    &__nope
+        text-align: center
+        font-size: 1.8rem
+        text-transform: uppercase
+    &__line
+        width: 600px
+        background-color: #ddd
+        height: 1px
+        margin: 30px auto
+
+.db-amount
+    display: flex
+    text-transform: uppercase
+    font-style: italic
+    font-size: 1.4rem
+    margin-bottom: 50px
+    &__value
+        margin-left: 10px
+        font-weight: 600
+        color: #666
+        font-size: 1.5rem
