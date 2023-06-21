@@ -1,1 +1,2 @@
-export const base_url = "https://longplayweb.azurewebsites.net";
+export const base_url =
+  "https://longplawyweb-backend-production.up.railway.app/";
