@@ -1,2 +1,2 @@
 export const base_url =
-  "https://longplawyweb-backend-production.up.railway.app/";
+  "https://longplawyweb-backend-production.up.railway.app";
