@@ -12,7 +12,7 @@ import {
 } from "../API-utils/endpointsManageRates";
 import { useQuery } from "react-query";
 import { Star } from "@material-ui/icons";
-import img_path from "../API-utils/links";
+import { img_path } from "../API-utils/links";
 
 const Rated = ({ props }) => {
   const album_id = props.album.id_music_album;
