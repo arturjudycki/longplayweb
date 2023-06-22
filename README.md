@@ -5,6 +5,6 @@ Link: <b>https://arturjudycki.github.io/longplayweb/</b>
 Aplikacja jest pozbawiona resposnywności. Jest dedykowana widokom desktopowym.
 
 Stack technologiczny aplikacji:
-Frontend - React, SASS
-Backend - Express
-Baza danych - MySQL
+Frontend - React, SASS <br>
+Backend - Express <br>
+Baza danych - MySQL <br>
