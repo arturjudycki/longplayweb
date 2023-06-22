@@ -12,6 +12,7 @@ import {
 } from "../API-utils/endpointsManageRates";
 import { useQuery } from "react-query";
 import { Star } from "@material-ui/icons";
+import img_path from "../API-utils/links";
 
 const Rated = ({ props }) => {
   const album_id = props.album.id_music_album;
@@ -100,7 +101,6 @@ const ArtistPage = () => {
 
   let content;
   let discography;
-  let img_path = "http://localhost:8000/images/";
 
   const { status: isLogged, data } = useQuery("user", userAuth, { retry: 0 });
 
