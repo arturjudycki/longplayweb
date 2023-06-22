@@ -1,1 +1,2 @@
-export const img_path = "http://localhost:8000/images/";
+export const img_path =
+  "https://longplawyweb-backend-production.up.railway.app/images/";
